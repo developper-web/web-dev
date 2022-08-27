@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    ---black: rgb(34, 33, 33);
+    ---white: white;
+    ---blue-bgba: #7bcfe4;
+    ---fontsize: 20px;
+    ---cl: rgb(253, 126, 53);
+}
+body{
+    background-color: rgb(39, 38, 38);
+}
+.main1{
+    position: relative;
+    width: 100%;
+    height: 90px;
+    margin: auto;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    z-index: 999;
+    top: 0;
+    background-color: rgb(39, 38, 38);
+}
+.header1{
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 70%;
+    box-shadow:
+    0px 10px 20px -10px rgba(0, 0, 0, 0.253),
+    0px 0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    background: white;
+}
+i{
+    color: var(---blue-bgba);
+}
+.icons{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+.icons a{
+    text-decoration: none;
+    color: rgb(253, 125, 51);
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+.icons a:hover{
+    box-shadow: 
+    0px 7px 3.5px rgb(223, 223, 220),
+    0px -1px 37px rgb(238, 236, 236),
+    inset 4px -4px 8px #3f3f3f1c,
+    inset -5px 5px 12px #fff;
+}
+.icons i{
+    margin-right: 5px;
+}
+.header1 h1{
+    color: var(---cl);
+}
+.profel{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profel a{
+ width: 20px;
+ height: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-decoration: none;
+}
+.profel a i{
+    font-size: 25px;
+   }
+.section1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 999px;
+    margin: auto;
+    box-shadow:
+    0px 10px 20px -10px rgba(0, 0, 0, 0.253),
+    0px 0px 3px rgba(0, 0, 0, 0.1);
+    top: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
+.contener{
+    margin-top: 50px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.my-img{
+    width: 190px;
+    height: 190px;
+    margin-top: 20px;
+    box-shadow:
+    0px 10px 20px -10px rgba(0, 0, 0, 0.253),
+    0px 0px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(252, 92, 18);
+    border: 2px solid rgb(39, 38, 38);
+    animation: shadow 1.5s ease-in-out infinite;
+}
+@keyframes shadow {
+    0%{
+        box-shadow: 0px 0px 0px 0px black;
+    }
+    50%{
+        box-shadow: 0px 0px 20px 10px rgb(255, 97, 35);
+    }
+    100%{
+        box-shadow: 0px 0px 20px 10px rgb(250, 99, 53);
+    }
+}
+.my-img img{
+    width: 170px;
+    height: 170px;
+    box-shadow: 
+    -8px 7px 37.5px rgb(231, 230, 229),
+    10px -19px 37.5px rgb(230, 228, 228),
+    inset 4px -4px 8px rgba(185, 185, 185, 0.53),
+    inset -5px 5px 12px rgb(204, 202, 202);
+    object-fit: cover;
+    border-radius: 15px;
+}
+.contener h1{
+    width: 70%;
+    margin-top: 20px;
+    font-size: 23px;
+    color: rgb(48, 47, 47);
+    padding: 5px 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contener h1::before{
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: #7bcfe4;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 10px;
+}
+.socail{
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:20px auto;
+    position: relative;
+}
+.socail::before{
+    content: '';
+    width: 90%;
+    height: 5px;
+    background: #7bcfe4;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 10px;
+}
+.socail a{
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.socail a i{
+    font-size: 35px;
+    color: #ff7316;
+}
